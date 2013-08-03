@@ -16,8 +16,6 @@
 		A6207C7317AD6CCB0025CED5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A6207C7217AD6CCB0025CED5 /* Default.png */; };
 		A6207C7517AD6CCB0025CED5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6207C7417AD6CCB0025CED5 /* Default@2x.png */; };
 		A6207C7717AD6CCB0025CED5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6207C7617AD6CCB0025CED5 /* Default-568h@2x.png */; };
-		A6207C7A17AD6CCB0025CED5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207C7917AD6CCB0025CED5 /* ViewController.m */; };
-		A6207C7D17AD6CCB0025CED5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6207C7B17AD6CCB0025CED5 /* ViewController.xib */; };
 		A6207C9717AD6D140025CED5 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207C8517AD6D140025CED5 /* AFHTTPClient.m */; };
 		A6207C9817AD6D140025CED5 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207C8717AD6D140025CED5 /* AFHTTPRequestOperation.m */; };
 		A6207C9917AD6D140025CED5 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207C8917AD6D140025CED5 /* AFImageRequestOperation.m */; };
@@ -39,6 +37,12 @@
 		A6207CBE17AD6DE00025CED5 /* DIOSView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207CB317AD6DE00025CED5 /* DIOSView.m */; };
 		A6207CC117AD7A110025CED5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6207CC017AD7A110025CED5 /* Social.framework */; };
 		A6207CC317AD7C240025CED5 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6207CC217AD7C240025CED5 /* FacebookSDK.framework */; };
+		A670E04617ADC6A50095F043 /* LogInScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = A670E04417ADC6A50095F043 /* LogInScreen.m */; };
+		A670E04717ADC6A50095F043 /* LogInScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A670E04517ADC6A50095F043 /* LogInScreen.xib */; };
+		A670E04B17ADC72C0095F043 /* SignInScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = A670E04917ADC72C0095F043 /* SignInScreen.m */; };
+		A670E04C17ADC72C0095F043 /* SignInScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A670E04A17ADC72C0095F043 /* SignInScreen.xib */; };
+		A670E05117ADC7EB0095F043 /* WelcomeScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = A670E04F17ADC7EB0095F043 /* WelcomeScreen.m */; };
+		A670E05217ADC7EB0095F043 /* WelcomeScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A670E05017ADC7EB0095F043 /* WelcomeScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,9 +59,6 @@
 		A6207C7217AD6CCB0025CED5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A6207C7417AD6CCB0025CED5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A6207C7617AD6CCB0025CED5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		A6207C7817AD6CCB0025CED5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A6207C7917AD6CCB0025CED5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A6207C7C17AD6CCB0025CED5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		A6207C8417AD6D140025CED5 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		A6207C8517AD6D140025CED5 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		A6207C8617AD6D140025CED5 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -100,6 +101,15 @@
 		A6207CB417AD6DE00025CED5 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		A6207CC017AD7A110025CED5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		A6207CC217AD7C240025CED5 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		A670E04317ADC6A50095F043 /* LogInScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInScreen.h; sourceTree = "<group>"; };
+		A670E04417ADC6A50095F043 /* LogInScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInScreen.m; sourceTree = "<group>"; };
+		A670E04517ADC6A50095F043 /* LogInScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInScreen.xib; sourceTree = "<group>"; };
+		A670E04817ADC72C0095F043 /* SignInScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInScreen.h; sourceTree = "<group>"; };
+		A670E04917ADC72C0095F043 /* SignInScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInScreen.m; sourceTree = "<group>"; };
+		A670E04A17ADC72C0095F043 /* SignInScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInScreen.xib; sourceTree = "<group>"; };
+		A670E04E17ADC7EB0095F043 /* WelcomeScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeScreen.h; sourceTree = "<group>"; };
+		A670E04F17ADC7EB0095F043 /* WelcomeScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeScreen.m; sourceTree = "<group>"; };
+		A670E05017ADC7EB0095F043 /* WelcomeScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,11 +162,11 @@
 		A6207C6617AD6CCB0025CED5 /* Student Study */ = {
 			isa = PBXGroup;
 			children = (
+				A6445E1F17ADB9FD0002E261 /* Design */,
+				A6445E1E17ADB9F80002E261 /* Logic */,
+				A6445E1D17ADB9EF0002E261 /* Screens */,
 				A6207C6F17AD6CCB0025CED5 /* AppDelegate.h */,
 				A6207C7017AD6CCB0025CED5 /* AppDelegate.m */,
-				A6207C7817AD6CCB0025CED5 /* ViewController.h */,
-				A6207C7917AD6CCB0025CED5 /* ViewController.m */,
-				A6207C7B17AD6CCB0025CED5 /* ViewController.xib */,
 				A6207C6717AD6CCB0025CED5 /* Supporting Files */,
 			);
 			path = "Student Study";
@@ -230,6 +240,60 @@
 			name = DrupalSDK;
 			sourceTree = "<group>";
 		};
+		A6445E1D17ADB9EF0002E261 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A670E04D17ADC7D70095F043 /* WelcomeScreen */,
+				A6445E2117ADBA100002E261 /* SignInScreen */,
+				A6445E2017ADBA070002E261 /* LogInScreen */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		A6445E1E17ADB9F80002E261 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		A6445E1F17ADB9FD0002E261 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Design;
+			sourceTree = "<group>";
+		};
+		A6445E2017ADBA070002E261 /* LogInScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A670E04317ADC6A50095F043 /* LogInScreen.h */,
+				A670E04417ADC6A50095F043 /* LogInScreen.m */,
+				A670E04517ADC6A50095F043 /* LogInScreen.xib */,
+			);
+			name = LogInScreen;
+			sourceTree = "<group>";
+		};
+		A6445E2117ADBA100002E261 /* SignInScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A670E04817ADC72C0095F043 /* SignInScreen.h */,
+				A670E04917ADC72C0095F043 /* SignInScreen.m */,
+				A670E04A17ADC72C0095F043 /* SignInScreen.xib */,
+			);
+			name = SignInScreen;
+			sourceTree = "<group>";
+		};
+		A670E04D17ADC7D70095F043 /* WelcomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A670E04E17ADC7EB0095F043 /* WelcomeScreen.h */,
+				A670E04F17ADC7EB0095F043 /* WelcomeScreen.m */,
+				A670E05017ADC7EB0095F043 /* WelcomeScreen.xib */,
+			);
+			name = WelcomeScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,8 +348,10 @@
 				A6207C6B17AD6CCB0025CED5 /* InfoPlist.strings in Resources */,
 				A6207C7317AD6CCB0025CED5 /* Default.png in Resources */,
 				A6207C7517AD6CCB0025CED5 /* Default@2x.png in Resources */,
+				A670E04C17ADC72C0095F043 /* SignInScreen.xib in Resources */,
+				A670E04717ADC6A50095F043 /* LogInScreen.xib in Resources */,
 				A6207C7717AD6CCB0025CED5 /* Default-568h@2x.png in Resources */,
-				A6207C7D17AD6CCB0025CED5 /* ViewController.xib in Resources */,
+				A670E05217ADC7EB0095F043 /* WelcomeScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +364,6 @@
 			files = (
 				A6207C6D17AD6CCB0025CED5 /* main.m in Sources */,
 				A6207C7117AD6CCB0025CED5 /* AppDelegate.m in Sources */,
-				A6207C7A17AD6CCB0025CED5 /* ViewController.m in Sources */,
 				A6207C9717AD6D140025CED5 /* AFHTTPClient.m in Sources */,
 				A6207C9817AD6D140025CED5 /* AFHTTPRequestOperation.m in Sources */,
 				A6207C9917AD6D140025CED5 /* AFImageRequestOperation.m in Sources */,
@@ -309,14 +374,17 @@
 				A6207C9E17AD6D140025CED5 /* AFXMLRequestOperation.m in Sources */,
 				A6207C9F17AD6D140025CED5 /* UIImageView+AFNetworking.m in Sources */,
 				A6207CB517AD6DE00025CED5 /* DIOSComment.m in Sources */,
+				A670E04B17ADC72C0095F043 /* SignInScreen.m in Sources */,
 				A6207CB617AD6DE00025CED5 /* DIOSCSRFAFHTTPClient.m in Sources */,
 				A6207CB717AD6DE00025CED5 /* DIOSEntity.m in Sources */,
 				A6207CB817AD6DE00025CED5 /* DIOSFile.m in Sources */,
+				A670E04617ADC6A50095F043 /* LogInScreen.m in Sources */,
 				A6207CB917AD6DE00025CED5 /* DIOSNode.m in Sources */,
 				A6207CBA17AD6DE00025CED5 /* DIOSSession.m in Sources */,
 				A6207CBB17AD6DE00025CED5 /* DIOSSystem.m in Sources */,
 				A6207CBC17AD6DE00025CED5 /* DIOSTaxonomy.m in Sources */,
 				A6207CBD17AD6DE00025CED5 /* DIOSUser.m in Sources */,
+				A670E05117ADC7EB0095F043 /* WelcomeScreen.m in Sources */,
 				A6207CBE17AD6DE00025CED5 /* DIOSView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,14 +398,6 @@
 				A6207C6A17AD6CCB0025CED5 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A6207C7B17AD6CCB0025CED5 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A6207C7C17AD6CCB0025CED5 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -409,6 +469,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Student Study/Student Study-Prefix.pch";
 				INFOPLIST_FILE = "Student Study/Student Study-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -424,6 +485,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Student Study/Student Study-Prefix.pch";
 				INFOPLIST_FILE = "Student Study/Student Study-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -448,6 +510,7 @@
 				A6207C8217AD6CCB0025CED5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

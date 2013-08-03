@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WelcomeScreen.h
 //  Student Study
 //
 //  Created by Pavel Gatilov on 8/3/13.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface WelcomeScreen : UIViewController
+
+- (IBAction) signUpWithEmailButtonClicked: (UIButton *) sender;
 
 @end
