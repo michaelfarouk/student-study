@@ -18,6 +18,27 @@
 		A6207C7717AD6CCB0025CED5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6207C7617AD6CCB0025CED5 /* Default-568h@2x.png */; };
 		A6207C7A17AD6CCB0025CED5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207C7917AD6CCB0025CED5 /* ViewController.m */; };
 		A6207C7D17AD6CCB0025CED5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6207C7B17AD6CCB0025CED5 /* ViewController.xib */; };
+		A6207C9717AD6D140025CED5 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207C8517AD6D140025CED5 /* AFHTTPClient.m */; };
+		A6207C9817AD6D140025CED5 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207C8717AD6D140025CED5 /* AFHTTPRequestOperation.m */; };
+		A6207C9917AD6D140025CED5 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207C8917AD6D140025CED5 /* AFImageRequestOperation.m */; };
+		A6207C9A17AD6D140025CED5 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207C8B17AD6D140025CED5 /* AFJSONRequestOperation.m */; };
+		A6207C9B17AD6D140025CED5 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207C8D17AD6D140025CED5 /* AFNetworkActivityIndicatorManager.m */; };
+		A6207C9C17AD6D140025CED5 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207C9017AD6D140025CED5 /* AFPropertyListRequestOperation.m */; };
+		A6207C9D17AD6D140025CED5 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207C9217AD6D140025CED5 /* AFURLConnectionOperation.m */; };
+		A6207C9E17AD6D140025CED5 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207C9417AD6D140025CED5 /* AFXMLRequestOperation.m */; };
+		A6207C9F17AD6D140025CED5 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207C9617AD6D140025CED5 /* UIImageView+AFNetworking.m */; };
+		A6207CB517AD6DE00025CED5 /* DIOSComment.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207CA117AD6DE00025CED5 /* DIOSComment.m */; };
+		A6207CB617AD6DE00025CED5 /* DIOSCSRFAFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207CA317AD6DE00025CED5 /* DIOSCSRFAFHTTPClient.m */; };
+		A6207CB717AD6DE00025CED5 /* DIOSEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207CA517AD6DE00025CED5 /* DIOSEntity.m */; };
+		A6207CB817AD6DE00025CED5 /* DIOSFile.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207CA717AD6DE00025CED5 /* DIOSFile.m */; };
+		A6207CB917AD6DE00025CED5 /* DIOSNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207CA917AD6DE00025CED5 /* DIOSNode.m */; };
+		A6207CBA17AD6DE00025CED5 /* DIOSSession.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207CAB17AD6DE00025CED5 /* DIOSSession.m */; };
+		A6207CBB17AD6DE00025CED5 /* DIOSSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207CAD17AD6DE00025CED5 /* DIOSSystem.m */; };
+		A6207CBC17AD6DE00025CED5 /* DIOSTaxonomy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207CAF17AD6DE00025CED5 /* DIOSTaxonomy.m */; };
+		A6207CBD17AD6DE00025CED5 /* DIOSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207CB117AD6DE00025CED5 /* DIOSUser.m */; };
+		A6207CBE17AD6DE00025CED5 /* DIOSView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207CB317AD6DE00025CED5 /* DIOSView.m */; };
+		A6207CC117AD7A110025CED5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6207CC017AD7A110025CED5 /* Social.framework */; };
+		A6207CC317AD7C240025CED5 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6207CC217AD7C240025CED5 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +58,48 @@
 		A6207C7817AD6CCB0025CED5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A6207C7917AD6CCB0025CED5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A6207C7C17AD6CCB0025CED5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		A6207C8417AD6D140025CED5 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		A6207C8517AD6D140025CED5 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		A6207C8617AD6D140025CED5 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		A6207C8717AD6D140025CED5 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		A6207C8817AD6D140025CED5 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		A6207C8917AD6D140025CED5 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		A6207C8A17AD6D140025CED5 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		A6207C8B17AD6D140025CED5 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		A6207C8C17AD6D140025CED5 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		A6207C8D17AD6D140025CED5 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		A6207C8E17AD6D140025CED5 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		A6207C8F17AD6D140025CED5 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		A6207C9017AD6D140025CED5 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		A6207C9117AD6D140025CED5 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		A6207C9217AD6D140025CED5 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		A6207C9317AD6D140025CED5 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		A6207C9417AD6D140025CED5 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		A6207C9517AD6D140025CED5 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		A6207C9617AD6D140025CED5 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		A6207CA017AD6DE00025CED5 /* DIOSComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSComment.h; sourceTree = "<group>"; };
+		A6207CA117AD6DE00025CED5 /* DIOSComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSComment.m; sourceTree = "<group>"; };
+		A6207CA217AD6DE00025CED5 /* DIOSCSRFAFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSCSRFAFHTTPClient.h; sourceTree = "<group>"; };
+		A6207CA317AD6DE00025CED5 /* DIOSCSRFAFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSCSRFAFHTTPClient.m; sourceTree = "<group>"; };
+		A6207CA417AD6DE00025CED5 /* DIOSEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSEntity.h; sourceTree = "<group>"; };
+		A6207CA517AD6DE00025CED5 /* DIOSEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSEntity.m; sourceTree = "<group>"; };
+		A6207CA617AD6DE00025CED5 /* DIOSFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSFile.h; sourceTree = "<group>"; };
+		A6207CA717AD6DE00025CED5 /* DIOSFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSFile.m; sourceTree = "<group>"; };
+		A6207CA817AD6DE00025CED5 /* DIOSNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSNode.h; sourceTree = "<group>"; };
+		A6207CA917AD6DE00025CED5 /* DIOSNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSNode.m; sourceTree = "<group>"; };
+		A6207CAA17AD6DE00025CED5 /* DIOSSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSSession.h; sourceTree = "<group>"; };
+		A6207CAB17AD6DE00025CED5 /* DIOSSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSSession.m; sourceTree = "<group>"; };
+		A6207CAC17AD6DE00025CED5 /* DIOSSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSSystem.h; sourceTree = "<group>"; };
+		A6207CAD17AD6DE00025CED5 /* DIOSSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSSystem.m; sourceTree = "<group>"; };
+		A6207CAE17AD6DE00025CED5 /* DIOSTaxonomy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSTaxonomy.h; sourceTree = "<group>"; };
+		A6207CAF17AD6DE00025CED5 /* DIOSTaxonomy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSTaxonomy.m; sourceTree = "<group>"; };
+		A6207CB017AD6DE00025CED5 /* DIOSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSUser.h; sourceTree = "<group>"; };
+		A6207CB117AD6DE00025CED5 /* DIOSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSUser.m; sourceTree = "<group>"; };
+		A6207CB217AD6DE00025CED5 /* DIOSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSView.h; sourceTree = "<group>"; };
+		A6207CB317AD6DE00025CED5 /* DIOSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSView.m; sourceTree = "<group>"; };
+		A6207CB417AD6DE00025CED5 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		A6207CC017AD7A110025CED5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		A6207CC217AD7C240025CED5 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +107,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6207CC117AD7A110025CED5 /* Social.framework in Frameworks */,
 				A6207C6117AD6CCB0025CED5 /* UIKit.framework in Frameworks */,
 				A6207C6317AD6CCB0025CED5 /* Foundation.framework in Frameworks */,
 				A6207C6517AD6CCB0025CED5 /* CoreGraphics.framework in Frameworks */,
+				A6207CC317AD7C240025CED5 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +138,10 @@
 		A6207C5F17AD6CCB0025CED5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A6207CBF17AD6DE50025CED5 /* DrupalSDK */,
+				A6207C8317AD6D140025CED5 /* AFNetworking */,
+				A6207CC217AD7C240025CED5 /* FacebookSDK.framework */,
+				A6207CC017AD7A110025CED5 /* Social.framework */,
 				A6207C6017AD6CCB0025CED5 /* UIKit.framework */,
 				A6207C6217AD6CCB0025CED5 /* Foundation.framework */,
 				A6207C6417AD6CCB0025CED5 /* CoreGraphics.framework */,
@@ -105,6 +174,60 @@
 				A6207C7617AD6CCB0025CED5 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6207C8317AD6D140025CED5 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A6207C8417AD6D140025CED5 /* AFHTTPClient.h */,
+				A6207C8517AD6D140025CED5 /* AFHTTPClient.m */,
+				A6207C8617AD6D140025CED5 /* AFHTTPRequestOperation.h */,
+				A6207C8717AD6D140025CED5 /* AFHTTPRequestOperation.m */,
+				A6207C8817AD6D140025CED5 /* AFImageRequestOperation.h */,
+				A6207C8917AD6D140025CED5 /* AFImageRequestOperation.m */,
+				A6207C8A17AD6D140025CED5 /* AFJSONRequestOperation.h */,
+				A6207C8B17AD6D140025CED5 /* AFJSONRequestOperation.m */,
+				A6207C8C17AD6D140025CED5 /* AFNetworkActivityIndicatorManager.h */,
+				A6207C8D17AD6D140025CED5 /* AFNetworkActivityIndicatorManager.m */,
+				A6207C8E17AD6D140025CED5 /* AFNetworking.h */,
+				A6207C8F17AD6D140025CED5 /* AFPropertyListRequestOperation.h */,
+				A6207C9017AD6D140025CED5 /* AFPropertyListRequestOperation.m */,
+				A6207C9117AD6D140025CED5 /* AFURLConnectionOperation.h */,
+				A6207C9217AD6D140025CED5 /* AFURLConnectionOperation.m */,
+				A6207C9317AD6D140025CED5 /* AFXMLRequestOperation.h */,
+				A6207C9417AD6D140025CED5 /* AFXMLRequestOperation.m */,
+				A6207C9517AD6D140025CED5 /* UIImageView+AFNetworking.h */,
+				A6207C9617AD6D140025CED5 /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		A6207CBF17AD6DE50025CED5 /* DrupalSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A6207CA017AD6DE00025CED5 /* DIOSComment.h */,
+				A6207CA117AD6DE00025CED5 /* DIOSComment.m */,
+				A6207CA217AD6DE00025CED5 /* DIOSCSRFAFHTTPClient.h */,
+				A6207CA317AD6DE00025CED5 /* DIOSCSRFAFHTTPClient.m */,
+				A6207CA417AD6DE00025CED5 /* DIOSEntity.h */,
+				A6207CA517AD6DE00025CED5 /* DIOSEntity.m */,
+				A6207CA617AD6DE00025CED5 /* DIOSFile.h */,
+				A6207CA717AD6DE00025CED5 /* DIOSFile.m */,
+				A6207CA817AD6DE00025CED5 /* DIOSNode.h */,
+				A6207CA917AD6DE00025CED5 /* DIOSNode.m */,
+				A6207CAA17AD6DE00025CED5 /* DIOSSession.h */,
+				A6207CAB17AD6DE00025CED5 /* DIOSSession.m */,
+				A6207CAC17AD6DE00025CED5 /* DIOSSystem.h */,
+				A6207CAD17AD6DE00025CED5 /* DIOSSystem.m */,
+				A6207CAE17AD6DE00025CED5 /* DIOSTaxonomy.h */,
+				A6207CAF17AD6DE00025CED5 /* DIOSTaxonomy.m */,
+				A6207CB017AD6DE00025CED5 /* DIOSUser.h */,
+				A6207CB117AD6DE00025CED5 /* DIOSUser.m */,
+				A6207CB217AD6DE00025CED5 /* DIOSView.h */,
+				A6207CB317AD6DE00025CED5 /* DIOSView.m */,
+				A6207CB417AD6DE00025CED5 /* Settings.h */,
+			);
+			name = DrupalSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +299,25 @@
 				A6207C6D17AD6CCB0025CED5 /* main.m in Sources */,
 				A6207C7117AD6CCB0025CED5 /* AppDelegate.m in Sources */,
 				A6207C7A17AD6CCB0025CED5 /* ViewController.m in Sources */,
+				A6207C9717AD6D140025CED5 /* AFHTTPClient.m in Sources */,
+				A6207C9817AD6D140025CED5 /* AFHTTPRequestOperation.m in Sources */,
+				A6207C9917AD6D140025CED5 /* AFImageRequestOperation.m in Sources */,
+				A6207C9A17AD6D140025CED5 /* AFJSONRequestOperation.m in Sources */,
+				A6207C9B17AD6D140025CED5 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				A6207C9C17AD6D140025CED5 /* AFPropertyListRequestOperation.m in Sources */,
+				A6207C9D17AD6D140025CED5 /* AFURLConnectionOperation.m in Sources */,
+				A6207C9E17AD6D140025CED5 /* AFXMLRequestOperation.m in Sources */,
+				A6207C9F17AD6D140025CED5 /* UIImageView+AFNetworking.m in Sources */,
+				A6207CB517AD6DE00025CED5 /* DIOSComment.m in Sources */,
+				A6207CB617AD6DE00025CED5 /* DIOSCSRFAFHTTPClient.m in Sources */,
+				A6207CB717AD6DE00025CED5 /* DIOSEntity.m in Sources */,
+				A6207CB817AD6DE00025CED5 /* DIOSFile.m in Sources */,
+				A6207CB917AD6DE00025CED5 /* DIOSNode.m in Sources */,
+				A6207CBA17AD6DE00025CED5 /* DIOSSession.m in Sources */,
+				A6207CBB17AD6DE00025CED5 /* DIOSSystem.m in Sources */,
+				A6207CBC17AD6DE00025CED5 /* DIOSTaxonomy.m in Sources */,
+				A6207CBD17AD6DE00025CED5 /* DIOSUser.m in Sources */,
+				A6207CBE17AD6DE00025CED5 /* DIOSView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +402,10 @@
 		A6207C8117AD6CCB0025CED5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Student Study/Student Study-Prefix.pch";
 				INFOPLIST_FILE = "Student Study/Student Study-Info.plist";
@@ -271,6 +417,10 @@
 		A6207C8217AD6CCB0025CED5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Student Study/Student Study-Prefix.pch";
 				INFOPLIST_FILE = "Student Study/Student Study-Info.plist";

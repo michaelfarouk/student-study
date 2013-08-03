@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface ViewController ()
 
@@ -18,6 +19,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSArray *permissions =
+    [NSArray arrayWithObjects:@"email", nil];
+    
+    [FBSession openActiveSessionWithReadPermissions:permissions
+                                       allowLoginUI:YES
+                                  completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+                                      /* handle success + failure in block */
+                                  }];
 }
 
 - (void)didReceiveMemoryWarning
