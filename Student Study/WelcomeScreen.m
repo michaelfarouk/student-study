@@ -9,6 +9,7 @@
 #import "WelcomeScreen.h"
 #import "SignInScreen.h"
 #import "LogInScreen.h"
+#import "DIOSNode.h"
 
 @interface WelcomeScreen ()
 
@@ -23,16 +24,16 @@
     self.navigationController.navigationBarHidden = YES;
 }
 
-- (void) viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-}
-
 #pragma mark - Button Actions
 
 - (IBAction) signUpWithEmailButtonClicked: (UIButton *) sender {
     SignInScreen *signIn = [[SignInScreen alloc] initWithNibName:@"SignInScreen" bundle:[NSBundle mainBundle]]; // create and init sign up screen
     [self.navigationController pushViewController:signIn animated:YES]; //push sign up screen through main navigation controller
+}
+
+- (IBAction) logInButtonClicked: (UIButton *) sender {
+    LogInScreen *logIn = [[LogInScreen alloc] initWithNibName:@"LogInScreen" bundle:[NSBundle mainBundle]]; // create and init login screen
+    [self.navigationController pushViewController:logIn animated:YES]; // push login through main nav controllerd
 }
 
 @end

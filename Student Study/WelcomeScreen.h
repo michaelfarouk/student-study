@@ -11,5 +11,6 @@
 @interface WelcomeScreen : UIViewController
 
 - (IBAction) signUpWithEmailButtonClicked: (UIButton *) sender;
+- (IBAction) logInButtonClicked: (UIButton *) sender;
 
 @end
