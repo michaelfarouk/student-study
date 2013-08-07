@@ -9,6 +9,7 @@
 #import "SignInScreen.h"
 #import "AFNetworking.h"
 #import "MainScreen.h"
+#import "UIViewController+UIViewController_PGCAdditions.h"
 
 @interface SignInScreen ()
 
@@ -59,6 +60,7 @@
     NSString *username = self.usernameTextField.text; //take username
     if (![email isEqualToString:@""]) {
         if (![username isEqualToString:@""]) {
+            [self showLoadingPopup];
             AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://mywebclass.pavelgatilov.com/mwc_rest_api/user/register"]];
             [httpClient setParameterEncoding:AFFormURLParameterEncoding];
             NSMutableURLRequest *request = [httpClient requestWithMethod:@"POST"
@@ -70,11 +72,13 @@
             [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
                 // Print the response body in text
                 id response = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
+                [self hideLoadingPopup];
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Thank You for registration" message:@"Read email message to complete registration" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
                 [alert show];
                 [self.navigationController popViewControllerAnimated:YES];
                 NSLog(@"%@",response);
             } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                [self hideLoadingPopup];
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Some error (maybe wrong email address)" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
                 [alert show];
             }];

@@ -9,6 +9,7 @@
 #import "LogInScreen.h"
 #import "AFNetworking.h"
 #import "MainScreen.h"
+#import "UIViewController+UIViewController_PGCAdditions.h"
 
 @interface LogInScreen ()
 
@@ -57,6 +58,7 @@
     NSString *password = self.passwordTextField.text; //take password
     if (![username isEqualToString:@""]) {
         if (![password isEqualToString:@""]) {
+            [self showLoadingPopup];
             AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://mywebclass.pavelgatilov.com/mwc_rest_api/user/login"]];
             [httpClient setParameterEncoding:AFFormURLParameterEncoding];
             NSMutableURLRequest *request = [httpClient requestWithMethod:@"POST"
@@ -67,9 +69,11 @@
             [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
                 // Print the response body in text
                 id response = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
+                [self hideLoadingPopup];
                 MainScreen *mainScreen = [[MainScreen alloc] initWithLoginData:response];
                 [self.navigationController pushViewController:mainScreen animated:YES];
             } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                [self hideLoadingPopup];
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Incorrect user data or server not responding" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
                 [alert show];
             }];
