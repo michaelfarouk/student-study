@@ -14,4 +14,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
 
+- (IBAction)signUpButtonClicked:(UIButton *)sender;
+
 @end

@@ -37,6 +37,8 @@
 		A6207CBE17AD6DE00025CED5 /* DIOSView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6207CB317AD6DE00025CED5 /* DIOSView.m */; };
 		A6207CC117AD7A110025CED5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6207CC017AD7A110025CED5 /* Social.framework */; };
 		A6207CC317AD7C240025CED5 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6207CC217AD7C240025CED5 /* FacebookSDK.framework */; };
+		A632581817B26F72003CF27C /* MainScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = A632581617B26F72003CF27C /* MainScreen.m */; };
+		A632581917B26F72003CF27C /* MainScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A632581717B26F72003CF27C /* MainScreen.xib */; };
 		A670E04617ADC6A50095F043 /* LogInScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = A670E04417ADC6A50095F043 /* LogInScreen.m */; };
 		A670E04717ADC6A50095F043 /* LogInScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A670E04517ADC6A50095F043 /* LogInScreen.xib */; };
 		A670E04B17ADC72C0095F043 /* SignInScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = A670E04917ADC72C0095F043 /* SignInScreen.m */; };
@@ -101,6 +103,9 @@
 		A6207CB417AD6DE00025CED5 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		A6207CC017AD7A110025CED5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		A6207CC217AD7C240025CED5 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		A632581517B26F72003CF27C /* MainScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScreen.h; sourceTree = "<group>"; };
+		A632581617B26F72003CF27C /* MainScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScreen.m; sourceTree = "<group>"; };
+		A632581717B26F72003CF27C /* MainScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainScreen.xib; sourceTree = "<group>"; };
 		A670E04317ADC6A50095F043 /* LogInScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInScreen.h; sourceTree = "<group>"; };
 		A670E04417ADC6A50095F043 /* LogInScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInScreen.m; sourceTree = "<group>"; };
 		A670E04517ADC6A50095F043 /* LogInScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInScreen.xib; sourceTree = "<group>"; };
@@ -240,9 +245,20 @@
 			name = DrupalSDK;
 			sourceTree = "<group>";
 		};
+		A632581417B26F40003CF27C /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A632581517B26F72003CF27C /* MainScreen.h */,
+				A632581617B26F72003CF27C /* MainScreen.m */,
+				A632581717B26F72003CF27C /* MainScreen.xib */,
+			);
+			name = MainScreen;
+			sourceTree = "<group>";
+		};
 		A6445E1D17ADB9EF0002E261 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				A632581417B26F40003CF27C /* MainScreen */,
 				A670E04D17ADC7D70095F043 /* WelcomeScreen */,
 				A6445E2117ADBA100002E261 /* SignInScreen */,
 				A6445E2017ADBA070002E261 /* LogInScreen */,
@@ -349,6 +365,7 @@
 				A6207C7317AD6CCB0025CED5 /* Default.png in Resources */,
 				A6207C7517AD6CCB0025CED5 /* Default@2x.png in Resources */,
 				A670E04C17ADC72C0095F043 /* SignInScreen.xib in Resources */,
+				A632581917B26F72003CF27C /* MainScreen.xib in Resources */,
 				A670E04717ADC6A50095F043 /* LogInScreen.xib in Resources */,
 				A6207C7717AD6CCB0025CED5 /* Default-568h@2x.png in Resources */,
 				A670E05217ADC7EB0095F043 /* WelcomeScreen.xib in Resources */,
@@ -378,6 +395,7 @@
 				A6207CB617AD6DE00025CED5 /* DIOSCSRFAFHTTPClient.m in Sources */,
 				A6207CB717AD6DE00025CED5 /* DIOSEntity.m in Sources */,
 				A6207CB817AD6DE00025CED5 /* DIOSFile.m in Sources */,
+				A632581817B26F72003CF27C /* MainScreen.m in Sources */,
 				A670E04617ADC6A50095F043 /* LogInScreen.m in Sources */,
 				A6207CB917AD6DE00025CED5 /* DIOSNode.m in Sources */,
 				A6207CBA17AD6DE00025CED5 /* DIOSSession.m in Sources */,
