@@ -9,6 +9,7 @@
 #import "WelcomeScreen.h"
 #import "SignInScreen.h"
 #import "LogInScreen.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface WelcomeScreen ()
 
@@ -33,6 +34,16 @@
 - (IBAction) logInButtonClicked: (UIButton *) sender {
     LogInScreen *logIn = [[LogInScreen alloc] initWithNibName:@"LogInScreen" bundle:[NSBundle mainBundle]]; // create and init login screen
     [self.navigationController pushViewController:logIn animated:YES]; // push login through main nav controllerd
+}
+
+- (IBAction) connectWithFacebookButtonClicked: (UIButton *) sender {
+    NSArray *permissions = [NSArray arrayWithObjects:@"email", nil];
+    [FBSession openActiveSessionWithReadPermissions:permissions
+                                       allowLoginUI:YES
+                                  completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+                                      /* handle success + failure in block */
+                                      NSLog(@"%d",session.state);
+                                  }];
 }
 
 @end

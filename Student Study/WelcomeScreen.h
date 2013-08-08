@@ -12,5 +12,6 @@
 
 - (IBAction) signUpWithEmailButtonClicked: (UIButton *) sender;
 - (IBAction) logInButtonClicked: (UIButton *) sender;
+- (IBAction) connectWithFacebookButtonClicked: (UIButton *) sender;
 
 @end
