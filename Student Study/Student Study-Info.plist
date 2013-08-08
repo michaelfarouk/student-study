@@ -32,5 +32,9 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>FacebookAppID</key>
+	<string>586758121375036</string>
+	<key>FacebookDisplayName</key>
+	<string>MyWebClass</string>
 </dict>
 </plist>

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DrupalServices.h"
 
-@interface WelcomeScreen : UIViewController
+@interface WelcomeScreen : UIViewController <DrupalServicesDelegate>
 
 - (IBAction) signUpWithEmailButtonClicked: (UIButton *) sender;
 - (IBAction) logInButtonClicked: (UIButton *) sender;

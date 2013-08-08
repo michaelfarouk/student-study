@@ -10,6 +10,7 @@
 #import "SignInScreen.h"
 #import "LogInScreen.h"
 #import <FacebookSDK/FacebookSDK.h>
+#import "UIViewController+UIViewController_PGCAdditions.h"
 
 @interface WelcomeScreen ()
 
@@ -42,8 +43,31 @@
                                        allowLoginUI:YES
                                   completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
                                       /* handle success + failure in block */
-                                      NSLog(@"%d",session.state);
+                                      if (status == FBSessionStateOpen) {
+                                          [[FBRequest requestForMe] startWithCompletionHandler:^(FBRequestConnection *connection, NSDictionary<FBGraphUser> *user, NSError *error) {
+                                              if (!error) {
+                                                  [self showLoadingPopup];
+                                                  DrupalServices *drupalServices = [DrupalServices new];
+                                                  drupalServices.delegate = self;
+                                                  [drupalServices signInWithUsername:[user objectForKey:@"email"] andEmail:[user objectForKey:@"email"]];
+                                              }
+                                          }];
+                                      }
                                   }];
+}
+
+#pragma mark - DrupalServicesDelegate
+
+- (void) signInSuccessfullyWithServiceResponse: (NSDictionary *) response {
+    [self hideLoadingPopup];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Thank You for registration" message:@"Read email message to complete registration" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    [alert show];
+}
+
+- (void) signInFailedWithError: (NSError *) error {
+    [self hideLoadingPopup];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Sorry" message:@"Some error" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    [alertView show];
 }
 
 @end

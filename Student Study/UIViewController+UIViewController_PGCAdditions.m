@@ -13,10 +13,11 @@
 - (void) showLoadingPopup {
     UIView *blackView = [[UIView alloc] initWithFrame:self.view.frame];
     blackView.backgroundColor = [UIColor darkGrayColor];
-    blackView.alpha = 0.15;
+    blackView.alpha = 0.4;
     blackView.tag = 1024;
     UIActivityIndicatorView *loadingIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-    loadingIndicator.center = CGPointMake(blackView.frame.size.width-16, blackView.frame.size.height-16);
+    loadingIndicator.center = CGPointMake(blackView.frame.size.width/2, blackView.frame.size.height/2);
+    [loadingIndicator startAnimating];
     [blackView addSubview:loadingIndicator];
     [self.view addSubview:blackView];
 }
