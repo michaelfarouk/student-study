@@ -40,6 +40,7 @@
 		A632581817B26F72003CF27C /* MainScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = A632581617B26F72003CF27C /* MainScreen.m */; };
 		A632581917B26F72003CF27C /* MainScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A632581717B26F72003CF27C /* MainScreen.xib */; };
 		A65FA7D617B27BC000466C2B /* UIViewController+UIViewController_PGCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A65FA7D517B27BC000466C2B /* UIViewController+UIViewController_PGCAdditions.m */; };
+		A65FA7D917B3B6F400466C2B /* DrupalServices.m in Sources */ = {isa = PBXBuildFile; fileRef = A65FA7D817B3B6F400466C2B /* DrupalServices.m */; };
 		A670E04617ADC6A50095F043 /* LogInScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = A670E04417ADC6A50095F043 /* LogInScreen.m */; };
 		A670E04717ADC6A50095F043 /* LogInScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A670E04517ADC6A50095F043 /* LogInScreen.xib */; };
 		A670E04B17ADC72C0095F043 /* SignInScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = A670E04917ADC72C0095F043 /* SignInScreen.m */; };
@@ -109,6 +110,8 @@
 		A632581717B26F72003CF27C /* MainScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainScreen.xib; sourceTree = "<group>"; };
 		A65FA7D417B27BC000466C2B /* UIViewController+UIViewController_PGCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UIViewController_PGCAdditions.h"; sourceTree = "<group>"; };
 		A65FA7D517B27BC000466C2B /* UIViewController+UIViewController_PGCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UIViewController_PGCAdditions.m"; sourceTree = "<group>"; };
+		A65FA7D717B3B6F400466C2B /* DrupalServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrupalServices.h; sourceTree = "<group>"; };
+		A65FA7D817B3B6F400466C2B /* DrupalServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrupalServices.m; sourceTree = "<group>"; };
 		A670E04317ADC6A50095F043 /* LogInScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInScreen.h; sourceTree = "<group>"; };
 		A670E04417ADC6A50095F043 /* LogInScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInScreen.m; sourceTree = "<group>"; };
 		A670E04517ADC6A50095F043 /* LogInScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInScreen.xib; sourceTree = "<group>"; };
@@ -273,6 +276,8 @@
 		A6445E1E17ADB9F80002E261 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				A65FA7D717B3B6F400466C2B /* DrupalServices.h */,
+				A65FA7D817B3B6F400466C2B /* DrupalServices.m */,
 			);
 			name = Logic;
 			sourceTree = "<group>";
@@ -401,6 +406,7 @@
 				A6207C9B17AD6D140025CED5 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				A6207C9C17AD6D140025CED5 /* AFPropertyListRequestOperation.m in Sources */,
 				A65FA7D617B27BC000466C2B /* UIViewController+UIViewController_PGCAdditions.m in Sources */,
+				A65FA7D917B3B6F400466C2B /* DrupalServices.m in Sources */,
 				A6207C9D17AD6D140025CED5 /* AFURLConnectionOperation.m in Sources */,
 				A6207C9E17AD6D140025CED5 /* AFXMLRequestOperation.m in Sources */,
 				A6207C9F17AD6D140025CED5 /* UIImageView+AFNetworking.m in Sources */,
@@ -501,7 +507,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Student Study/Student Study-Prefix.pch";
 				INFOPLIST_FILE = "Student Study/Student Study-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -517,7 +523,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Student Study/Student Study-Prefix.pch";
 				INFOPLIST_FILE = "Student Study/Student Study-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

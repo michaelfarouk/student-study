@@ -9,7 +9,6 @@
 #import "WelcomeScreen.h"
 #import "SignInScreen.h"
 #import "LogInScreen.h"
-#import "DIOSNode.h"
 
 @interface WelcomeScreen ()
 

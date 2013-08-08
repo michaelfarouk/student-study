@@ -26,7 +26,7 @@
 
 #pragma mark - Button Actions
 
-- (IBAction) logInButtonClicked:(UIButton *) sender {
+- (IBAction) logInButtonClicked: (UIButton *) sender {
     [self logIn];
 }
 
@@ -56,28 +56,12 @@
 - (void) logIn {
     NSString *username = self.emailTextField.text; //take username
     NSString *password = self.passwordTextField.text; //take password
+    DrupalServices *drupalServices = [[DrupalServices alloc] init];
+    drupalServices.delegate = self;
     if (![username isEqualToString:@""]) {
         if (![password isEqualToString:@""]) {
             [self showLoadingPopup];
-            AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://mywebclass.pavelgatilov.com/mwc_rest_api/user/login"]];
-            [httpClient setParameterEncoding:AFFormURLParameterEncoding];
-            NSMutableURLRequest *request = [httpClient requestWithMethod:@"POST"
-                                                                    path:@"http://mywebclass.pavelgatilov.com/mwc_rest_api/user/login"
-                                                              parameters:@{@"username":username,@"password":password}];
-            AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
-            [httpClient registerHTTPOperationClass:[AFHTTPRequestOperation class]];
-            [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-                // Print the response body in text
-                id response = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
-                [self hideLoadingPopup];
-                MainScreen *mainScreen = [[MainScreen alloc] initWithLoginData:response];
-                [self.navigationController pushViewController:mainScreen animated:YES];
-            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                [self hideLoadingPopup];
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Incorrect user data or server not responding" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
-                [alert show];
-            }];
-            [operation start];
+            [drupalServices logInWithUsername:username andPassword:password];
         } else {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please fill password field" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
             [alert show];
@@ -86,6 +70,20 @@
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please fill username field" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
         [alert show];
     }
+}
+
+#pragma mark - DrupalServicesDelegate
+
+- (void) logInSuccessfullyWithServiceResponse: (NSDictionary *) response {
+    [self hideLoadingPopup];
+    MainScreen *mainScreen = [[MainScreen alloc] initWithLoginData:response];
+    [self.navigationController pushViewController:mainScreen animated:YES];
+}
+
+- (void) logInFailedWithError: (NSError *) error {
+    [self hideLoadingPopup];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Incorrect user data or server not responding" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    [alert show];
 }
 
 @end

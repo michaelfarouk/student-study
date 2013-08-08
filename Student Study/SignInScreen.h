@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DrupalServices.h"
 
-@interface SignInScreen : UIViewController <UITextFieldDelegate>
+@interface SignInScreen : UIViewController <UITextFieldDelegate, DrupalServicesDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
